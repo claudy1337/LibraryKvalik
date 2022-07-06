@@ -1,0 +1,152 @@
+﻿<Page x:Class="Library.Pages.BookCardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Library.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BookCardPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="400"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1">
+            <Button x:Name="backBtn"
+                Content="Назад" 
+                Grid.Column="0" 
+                Grid.Row="8"
+                Height="40" 
+                Width="140"
+                FontSize="24"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Click="backBtn_Click"/>
+
+            <Button x:Name="addBtn"
+                Margin="100,0,100,0"
+                Content="Добавить"
+                Grid.Column="1" 
+                Grid.Row="8"
+                Height="40" 
+                Width="140" 
+                FontSize="24"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Click="addBtn_Click"/>
+
+            <Button x:Name="deleteBtn"
+                Content="Удалить"
+                Grid.Column="2" 
+                Grid.Row="8"
+                Height="40" 
+                Width="140" 
+                FontSize="24"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Click="deleteBtn_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Название" 
+                   FontSize="20"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+            
+            <TextBox x:Name="name_txt" 
+                 Height="30"
+                 Width="250"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"/>
+
+            <TextBlock Text="Автор"
+                   FontSize="20"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+            
+            <TextBox x:Name="author_txt" 
+                 Height="30"
+                 Width="250"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"/>
+
+            <TextBlock Text="Год публикации" 
+                   FontSize="20"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+            <TextBox x:Name="year_txt" 
+                 Height="30"
+                 Width="250"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"/>
+
+            
+
+            <TextBlock Text="Издание"
+                   FontSize="20"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+            <TextBox x:Name="publisher_txt" 
+                 Height="30"
+                 Width="250"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"/>
+            
+            <TextBlock Text="Жанр"
+                   Grid.Column="0" 
+                   Grid.Row="5"
+                   FontSize="20"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+
+
+            <TextBox x:Name="theme_txt"
+                 Height="30"
+                 Width="250"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"/>
+
+
+            <TextBlock Text="Количество"
+                   Grid.Column="0" 
+                   Grid.Row="6"
+                   FontSize="20"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+
+            <TextBox x:Name="amount_txt"
+                 Height="30"
+                 Width="250"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"/>
+
+            <CheckBox x:Name="isBloked_cb"
+                 Content="IsFree" 
+                 Margin="10"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"
+                 IsChecked="True"/>
+        </StackPanel>
+    </Grid>
+</Page>
